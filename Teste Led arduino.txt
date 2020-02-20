@@ -1,0 +1,27 @@
+int led = 2, led2 = 3; // valor é o número da porta 
+
+Void setup() {
+
+pinMode(led, OUTPUT); // output define a porta como saída de energia
+pinMode(led2, OUTPUT);	
+
+}
+
+Void loop () {
+
+digitalWrite(led, HIGH); // high manda alta frequencia de energia (acender)
+delay(500);// demora para ler o próx código em ms
+digitalWrite(led, LOW); // escrita digital // LOW baixa frequencia de energia (desligar)
+delay(500);
+digitalWrite(led2, HIGH);
+delay(500);
+digitalWrite(led2, LOW);
+delay(500);
+digitalWrite(led, HIGH);
+digitalWrite(led2, HIGH);
+delay(500);
+digitalWrite(led, LOW);
+digitalWrite(led2, LOW);
+
+
+}

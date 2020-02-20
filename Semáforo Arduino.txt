@@ -1,0 +1,27 @@
+int led = 2,led2 = 3, led3 = 4, ledP1 = 5, ledP2 = 6; // variavel que armzazena o valor do led
+void setup() {
+  // put your setup code here, to run once:
+pinMode(led,OUTPUT); // define o  pino 2 como saida
+pinMode(led2,OUTPUT);// define o  pino 3 como saida
+pinMode(led3,OUTPUT);
+pinMode(ledP1,OUTPUT);
+pinMode(ledP2,OUTPUT);
+
+} 
+
+void loop() {
+  digitalWrite(led, HIGH); // led para carros vermelho
+  digitalWrite(ledP1, HIGH); // led verde pedestre 
+  delay(4000);
+  digitalWrite(ledP1, LOW);
+  digitalWrite(led, LOW); // desliga o vermelho para carros
+  digitalWrite(led3, HIGH); // liga verde para carros
+  digitalWrite(ledP2, HIGH); //vermelho para pedestre
+  delay(5000);  
+  digitalWrite(led3, LOW); // desliga verde para carros
+  digitalWrite(led2, HIGH); // liga amarelo carros
+  delay(3000);
+  digitalWrite(led2, LOW);
+  digitalWrite(ledP2, LOW); // desliga vermelho pedestre  
+
+}

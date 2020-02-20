@@ -1,0 +1,24 @@
+int led = 4, btn =2;
+int estadoBtn = 0;
+
+void setup() 
+{  
+pinMode (led, OUTPUT);
+pinMode(btn, INPUT);
+Serial.begin(9600);
+} 
+
+void loop()
+{
+  estadoBtn = digitalRead(btn);
+ 
+  if (estadoBtn == 1)
+  {
+    digitalWrite(led, HIGH);    
+  }
+  else 
+  {
+    digitalWrite(led, LOW);    
+  }
+ 
+}
